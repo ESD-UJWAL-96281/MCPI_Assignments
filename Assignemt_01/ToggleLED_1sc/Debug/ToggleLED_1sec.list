@@ -41,15 +41,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_line   00000f4e  00000000  00000000  0001a268  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    0008b805  00000000  00000000  0001b1b6  2**0
+ 19 .debug_str    0008b80d  00000000  00000000  0001b1b6  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000043  00000000  00000000  000a69bb  2**0
+ 20 .comment      00000043  00000000  00000000  000a69c3  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  00000198  00000000  00000000  000a6a00  2**2
+ 21 .debug_frame  00000198  00000000  00000000  000a6a08  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loclists 00000025  00000000  00000000  000a6b98  2**0
+ 22 .debug_loclists 00000025  00000000  00000000  000a6ba0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_line_str 00000074  00000000  00000000  000a6bbd  2**0
+ 23 .debug_line_str 0000007c  00000000  00000000  000a6bc5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -225,7 +225,7 @@ void led_toggle(uint8_t pin)
  80002bc:	40020c00 	.word	0x40020c00
 
 080002c0 <delay_ms>:
- */
+
 
 #include "led.h"
 
@@ -278,7 +278,7 @@ int main(void)
 
 	while(1)
 	{
-		// Toggle alternate LEDs (PD12 & PD14)
+
 		led_toggle(LED_GREEN);
  800030c:	200c      	movs	r0, #12
  800030e:	f7ff ffc1 	bl	8000294 <led_toggle>
@@ -289,7 +289,7 @@ int main(void)
  8000318:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
  800031c:	f7ff ffd0 	bl	80002c0 <delay_ms>
 
-		// Toggle alternate LEDs (PD13 & PD15)
+
 		led_toggle(LED_ORANGE);
  8000320:	200d      	movs	r0, #13
  8000322:	f7ff ffb7 	bl	8000294 <led_toggle>

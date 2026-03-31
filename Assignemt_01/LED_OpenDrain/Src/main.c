@@ -26,7 +26,7 @@
 
 void delay_ms(uint32_t ms)
 {
-	for(uint32_t i = 0; i < ms * 4000; i++);
+	for(uint32_t i = 0; i < ms * 2000; i++);
 }
 
 int main(void)
@@ -39,12 +39,12 @@ int main(void)
 
 	while(1)
 	{
-		// Toggle alternate LEDs (PD12 & PD14)
+
 		led_toggle(LED_GREEN);
 		led_toggle(LED_RED);
 		delay_ms(1000);
 
-		// Toggle alternate LEDs (PD13 & PD15)
+
 		led_toggle(LED_ORANGE);
 		led_toggle(LED_BLUE);
 		delay_ms(1000);

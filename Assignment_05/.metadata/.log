@@ -1,0 +1,30 @@
+!SESSION 2026-03-30 17:39:32.371 -----------------------------------------------
+eclipse.buildId=Version 2.1.0
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-30 17:42:57.590
+!MESSAGE Log4j2 initialized with config file /home/sunbeam/Desktop/MCPI_Assignments/MCPI_Assignments/Assignment_05/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-30 17:43:01.008
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-30 17:44:02.111
+!MESSAGE Indexed 'HAL_RTC_LCD' (23 sources, 121 headers) in 6.39 sec: 12,262 declarations; 55,585 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.35%)
+!SESSION 2026-03-31 05:43:10.639 -----------------------------------------------
+eclipse.buildId=Version 2.1.0
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-31 05:43:50.407
+!MESSAGE Log4j2 initialized with config file /home/sunbeam/Desktop/MCPI_Assignments/MCPI_Assignments/Assignment_05/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-31 05:43:57.830
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-31 05:45:29.867
+!MESSAGE Indexed 'HAL_ADC_LCD' (24 sources, 153 headers) in 7.26 sec: 14,458 declarations; 60,858 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.32%)

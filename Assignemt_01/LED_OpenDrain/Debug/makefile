@@ -59,8 +59,8 @@ all: main-build
 main-build: LED_OpenDrain.elf secondary-outputs
 
 # Tool invocations
-LED_OpenDrain.elf LED_OpenDrain.map: $(OBJS) $(USER_OBJS) /home/sunbeam/Desktop/MCPI_ASS/MCPI_Assignments/Assignemt_01/LED_OpenDrain/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LED_OpenDrain.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/sunbeam/Desktop/MCPI_ASS/MCPI_Assignments/Assignemt_01/LED_OpenDrain/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_OpenDrain.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+LED_OpenDrain.elf LED_OpenDrain.map: $(OBJS) $(USER_OBJS) /home/sunbeam/Desktop/MCPI_Assignments/MCPI_Assignments/Assignemt_01/LED_OpenDrain/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "LED_OpenDrain.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/sunbeam/Desktop/MCPI_Assignments/MCPI_Assignments/Assignemt_01/LED_OpenDrain/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_OpenDrain.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

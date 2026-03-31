@@ -27,12 +27,7 @@
 
 
 
-/*
- * main.c
- *
- *  Created on: 29-Mar-2026
- *      Author: sunbeam
- */
+
 
 #include "led.h"
 
@@ -51,12 +46,12 @@ int main(void)
 
 	while(1)
 	{
-		// Toggle alternate LEDs (PD12 & PD14)
+
 		led_toggle(LED_GREEN);
 		led_toggle(LED_RED);
 		delay_ms(1000);
 
-		// Toggle alternate LEDs (PD13 & PD15)
+
 		led_toggle(LED_ORANGE);
 		led_toggle(LED_BLUE);
 		delay_ms(1000);
