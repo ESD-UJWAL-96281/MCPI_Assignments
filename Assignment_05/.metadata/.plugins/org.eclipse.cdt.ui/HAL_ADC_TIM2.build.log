@@ -1,0 +1,21 @@
+05:32:29 **** Incremental Build of configuration Debug for project HAL_ADC_TIM2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "HAL_ADC_TIM2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_ADC_TIM2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_2.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: ./Core/Src/main.o: in function `HAL_ADC_ConvCpltCallback':
+/home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2/Debug/../Core/Src/main.c:80:(.text.HAL_ADC_ConvCpltCallback+0x56): undefined reference to `lcd_puts'
+/opt/st/stm32cubeide_2.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: (lcd_puts): Unknown destination type (ARM/Thumb) in ./Core/Src/main.o
+/home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2/Debug/../Core/Src/main.c:80:(.text.HAL_ADC_ConvCpltCallback+0x56): dangerous relocation: unsupported relocation
+/opt/st/stm32cubeide_2.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: ./Core/Src/main.o: in function `main':
+/home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2/Debug/../Core/Src/main.c:125:(.text.main+0x18): undefined reference to `lcd_init'
+/opt/st/stm32cubeide_2.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: (lcd_init): Unknown destination type (ARM/Thumb) in ./Core/Src/main.o
+/home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2/Debug/../Core/Src/main.c:125:(.text.main+0x18): dangerous relocation: unsupported relocation
+/opt/st/stm32cubeide_2.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: /home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2/Debug/../Core/Src/main.c:126:(.text.main+0x20): undefined reference to `lcd_puts'
+/opt/st/stm32cubeide_2.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: (lcd_puts): Unknown destination type (ARM/Thumb) in ./Core/Src/main.o
+/home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2/Debug/../Core/Src/main.c:126:(.text.main+0x20): dangerous relocation: unsupported relocation
+collect2: error: ld returned 1 exit status
+make: *** [makefile:64: HAL_ADC_TIM2.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+05:32:29 Build Failed. 10 errors, 0 warnings. (took 373ms)
+

@@ -9,6 +9,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/sunbeam/STM32CUBEMX/HAL_UART_POLLING_LCD"/>
+			<item value="/home/sunbeam/STM32CUBEMX/HAL_SPI_ACCEL_LED"/>
+			<item value="/home/sunbeam/STM32CUBEMX/HAL_ADC_TIM2"/>
+			<item value="/home/sunbeam/STM32CUBEMX/HAL_ADC_SWITCH"/>
 			<item value="/home/sunbeam/STM32CUBEMX/HAL_ADC_LCD"/>
 			<item value="/home/sunbeam/STM32CUBEMX/HAL_RTC_LCD"/>
 		</list>
